@@ -1,0 +1,292 @@
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.player-section {
+    background-color: #141212;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    margin: 6% 0;
+}
+
+.greatest {
+    color: white;
+    width: 50%;
+    height: 80%;
+    margin: 3%;
+
+}
+
+.greatest h1 {
+    font-weight: 700;
+
+}
+
+.watch-live {
+    background-color: rgb(22, 185, 22);
+    width: 180px;
+    height: 50px;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    border: 1px solid;
+}
+
+
+.button {
+    width: 312px;
+    height: 312px;
+    border-radius: 10px;
+    background-color: #141212;
+    flex-direction: column;
+}
+
+.button-1 {
+    width: 252px;
+    height: 64.25px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 38px 30px 24px 30px;
+    border: 1px solid;
+
+
+}
+
+.button-2 {
+    width: 252px;
+    height: 64.25px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 0px 30px 24px 30px;
+    border: 1px solid;
+
+
+}
+
+.button-3 {
+    width: 252px;
+    height: 64.25px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: fuchsia;
+    margin: 0px 30px 30px 30px;
+    border: 1px solid;
+
+}
+
+.article-1 .icon {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2%;
+
+
+}
+
+.blog-1 {
+    width: 80%;
+}
+
+
+
+footer {
+    background-color: #141212;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+footer .footer-1 h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+    border-bottom: 1px solid wheat;
+    padding: 40px;
+
+
+}
+
+footer .footer-1 ul li {
+    display: inline-block;
+    list-style: none;
+
+
+}
+
+footer .footer-1 ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+footer .footer-1 a i {
+    color: white;
+}
+
+
+
+/* upcoming Match */
+
+.team {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.upcoming-match {
+    text-align: center;
+}
+
+.team img {
+    height: 70px;
+    width: 90px;
+    padding: 8px;
+}
+
+.upcoming-match h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #181515;
+    padding: 10px;
+}
+
+.upcoming-match p {
+    font-size: 16px;
+    color: white;
+
+}
+
+/* ----------------
+-----------------media-queies--------------------- */
+
+@media only screen and (max-width:688px) {
+    .player-section {
+        display: block;
+        text-align: center;
+
+    }
+
+    .greatest {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .greatest h1 {
+        text-align: center;
+        font-weight: 700;
+        padding: 10px 0px;
+        font-size: 40px;
+
+    }
+
+    .greatest p {
+        font-size: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 40px;
+        text-align: center;
+
+    }
+
+    .watch-live {
+        color: white;
+        background-color: #DD0000;
+        transition: all 0.5s;
+    }
+
+    .marcelo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .blogs-section {
+        margin-bottom: 170%;
+
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 1%;
+    }
+
+    .button {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul li a {
+        flex-direction: column;
+
+    }
+
+
+}
+
+
+@media screen and (min-width: 688px) and (max-width: 992px) {
+    .greatest h1 {
+        font-size: 40px;
+        font-weight: 600;
+        padding: 20px 0;
+    }
+
+    .greatest p {
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 40px;
+    }
+
+    .marcelo {
+        bottom: 0%;
+        right: 3%;
+
+
+    }
+
+    .blogs-section {
+        margin-bottom: 270px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 20px, repeat(6, 1fr);
+        grid-gap: 1.5%;
+
+    }
+
+    .blogs .button {
+
+        display: flex;
+        grid-column: 1 / -1;
+
+
+
+    }
+
+    .button {
+        width: 100%;
+        flex-direction: row;
+        background-color: white;
+        font-size: 20px;
+        border: 1px solid #161616;
+        border-radius: 10px;
+    }
+
+
+}
